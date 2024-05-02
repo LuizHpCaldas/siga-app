@@ -19,7 +19,7 @@
   border-radius: 5px;
   text-decoration: none;
   color: #FFF;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -32,7 +32,7 @@
   margin-right: 8px;
 }
 .logo {
-  width: 50px; /* Defina a largura desejada para a logo */
+  width: 60px; /* Defina a largura desejada para a logo */
   height: auto; /* Isso garante que a altura seja ajustada automaticamente para manter a proporção */
   margin-right: 30px; /* Adicione margem à direita para separar a logo dos outros elementos */
 }
