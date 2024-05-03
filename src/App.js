@@ -1,20 +1,23 @@
 // App.js
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import SafraComponent from './components/SafraComponent';
-import CustoProducaoComponent from './components/CustoProducaoComponent';
-import HomePage from './pages/HomePage';
 
-function App() {
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage'; // Importe a página HomePage
+import SafraPage from './pages/SafraPage'; // Importe a página SafraPage
+import NavBar from './components/NavBar'; // Importe o componente NavBar
+
+const App = () => {
   return (
     <Router>
+      <NavBar />
+       {/* Renderize o componente NavBar aqui */}
       <Routes>
-        <Route exact path="/" element={<HomePage />} />
-        <Route exact path="/safra" element={<SafraComponent />} />
-        <Route exact path="/custo-producao" element={<CustoProducaoComponent />} />
+        <Route path="/" element={<HomePage />} /> {/* Página inicial */}
+        <Route path="/safra" element={<SafraPage />} /> {/* Página de Safra */}
+        {/* Adicione mais rotas conforme necessário */}
       </Routes>
     </Router>
   );
-}
+};
 
 export default App;

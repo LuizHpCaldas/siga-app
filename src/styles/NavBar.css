@@ -1,0 +1,43 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #00c65e;
+  }
+  
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-button {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .nav-buttons {
+    display: flex;
+    align-items: center;
+    list-style-type: none; /* Adicione esta linha para remover as bolinhas */
+  }
+  
+  .nav-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .icon {
+    margin-right: 8px;
+  }
+  .logo {
+    width: 60px; /* Defina a largura desejada para a logo */
+    height: auto; /* Isso garante que a altura seja ajustada automaticamente para manter a proporção */
+    margin-right: 30px; /* Adicione margem à direita para separar a logo dos outros elementos */
+  }
