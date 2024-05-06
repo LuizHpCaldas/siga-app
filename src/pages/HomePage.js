@@ -1,16 +1,14 @@
 import React from 'react';
+import ResumoComponent from '../components/ResumoComponent';
 
 
 const HomePage = () => {
   return (
     <div>
-      {/* Inclua o NavBar aqui */}
-     
-
-      {/* Conteúdo da Home Page */}
-      <h1>Bem-vindo!!</h1>
-      <p>Siga - Seu melhor amigo no campo</p>
-    </div>
+    <h1>Bem-vindo à HomePage</h1>
+    <ResumoComponent />
+  </div>
+    
   );
 };
 

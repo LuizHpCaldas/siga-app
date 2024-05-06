@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage'; // Importe a página HomePage
 import SafraPage from './pages/SafraPage'; // Importe a página SafraPage
 import NavBar from './components/NavBar'; // Importe o componente NavBar
+import MovimentacoesComponent from './components/MovimentacoesComponent';
 
 const App = () => {
   return (
@@ -14,7 +15,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} /> {/* Página inicial */}
         <Route path="/safra" element={<SafraPage />} /> {/* Página de Safra */}
-        {/* Adicione mais rotas conforme necessário */}
+        <Route path="/movimentacoes" element={<MovimentacoesComponent />} />
       </Routes>
     </Router>
   );

@@ -39,6 +39,7 @@ const SafraPage = () => {
       </Routes>
     </div>
   );
+
 };
 
 export default SafraPage;
